@@ -1,17 +1,16 @@
--- 建立 test 資料庫
+-- If doesn't have test database create one.
 CREATE DATABASE IF NOT EXISTS test;
 
--- 使用 test 資料庫
 USE test;
 
--- 建立 user 資料表
+-- Create user table
 CREATE TABLE `user` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `points` INT,
   `cash` FLOAT
 );
 
--- 建立 product 資料表
+-- Crate product table
 CREATE TABLE `product` (
   `id` VARCHAR(1) PRIMARY KEY,
   `name` VARCHAR(255) NOT NULL,
@@ -20,7 +19,7 @@ CREATE TABLE `product` (
   `can_be_exchanged` TINYINT(1) NOT NULL
 );
 
--- 插入產品資料
+-- Insert default value, can_be_exchanged 0 is mean only can buy, 1 is mean only use point change.
 INSERT INTO `product` (id, name, price, points, can_be_exchanged)
 VALUES
   ('A', 'Product A', 1000, 5, 0),

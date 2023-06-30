@@ -1,4 +1,3 @@
-# views.py
 from flask import Blueprint, request
 from flask_restx import Api, Resource
 from flask_restx import fields
