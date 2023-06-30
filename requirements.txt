@@ -1,0 +1,10 @@
+flask==1.1.4
+flask_sqlalchemy==2.5.1
+flask_restx==0.4.0
+pymysql==1.0.2
+marshmallow==3.13.0
+flask_marshmallow==0.15.0
+werkzeug==1.0.1
+markupsafe==1.1.1
+sqlalchemy==1.4.22
+
