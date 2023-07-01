@@ -7,4 +7,3 @@ flask_marshmallow==0.15.0
 werkzeug==1.0.1
 markupsafe==1.1.1
 sqlalchemy==1.4.22
-
